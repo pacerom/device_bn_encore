@@ -14,14 +14,11 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/bn/encore/full_encore.mk)
-
 PRODUCT_RELEASE_NAME := NookColor
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/pace/config/common_full_tablet_wifionly.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=encore BUILD_ID=JSS15Q BUILD_DISPLAY_ID=JSS15Q BUILD_FINGERPRINT="bn/bn_encore/encore:4.3/JSS15Q/779366:user/release-keys" PRIVATE_BUILD_DESC="encore-user 4.3 JSS15Q 779366 release-keys"
 
-PRODUCT_NAME := cm_encore
-PRODUCT_DEVICE := encore
+PRODUCT_NAME := pace_encore
